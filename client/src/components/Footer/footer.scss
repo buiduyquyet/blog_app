@@ -1,0 +1,39 @@
+$lightGreen: #b9e7e7;
+
+footer {
+    margin-top: 22px;
+    padding: 20px;
+    background-color: #05386b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    flex-shrink: 0;
+
+    .footer-icon {
+        span {
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            border-radius: 50%;
+            background-color: $lightGreen;
+            border: 1px solid teal;
+            color: teal;
+        }
+
+        span:hover {
+            background-color: white;
+        }
+    }
+
+    img {
+        height: 9em;
+    }
+
+    .made-love {
+        color: $lightGreen;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: underline wavy;
+    }
+}

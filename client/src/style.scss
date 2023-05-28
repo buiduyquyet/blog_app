@@ -1,0 +1,36 @@
+$lightGreen: #b9e7e7;
+
+.app {
+  button {
+    width: max-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: white;
+    border: 1px solid teal;
+    color: teal;
+
+    &:hover {
+      border: 1px solid white;
+      background-color: $lightGreen;
+      color: #05386b;
+    }
+  }
+
+  .container {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 145px);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

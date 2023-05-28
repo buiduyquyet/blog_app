@@ -1,0 +1,13 @@
+.profile {
+    width: 60%;
+    margin: 0 auto;
+
+    .user-infor {
+        img {
+            width: 30%;
+            height: auto;
+            // object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
