@@ -93,3 +93,28 @@
             }
         }
     }
+
+    // Responsive
+
+    /* Điều chỉnh khung trên các thiết bị có độ rộng màn hình nhỏ hơn 768px */
+    @media (max-width: 768px) {}
+
+    /* Điều chỉnh khung trên các thiết bị có độ rộng màn hình từ 768px đến 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .posts {
+            gap: 0 !important;
+        }
+
+        .post {
+            &:nth-child(2n + 1) {
+                flex-direction: row;
+            }
+
+            div {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /* Điều chỉnh khung trên các thiết bị có độ rộng màn hình lớn hơn 1024px */
+    @media (min-width: 1024px) {}

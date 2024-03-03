@@ -49,10 +49,10 @@ const Write = () => {
           date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss"),
         });
       message.success("Đã lưu bài viết :))");
-      navigate("/")
+      navigate("/");
     } catch (err) {
       message.error("Có lỗi xảy ra !");
-      console.log("Err: ", err);
+      console.log("Error: ", err);
     }
   };
 
@@ -66,7 +66,6 @@ const Write = () => {
           onChange={(e) => setTitle(e.target.value)}
         />
         <div className="editorContainer">
-          <label htmlFor="">Nội dung</label>
           <ReactQuill
             className="editor"
             theme="snow"
@@ -78,11 +77,9 @@ const Write = () => {
       </div>
       <div className="menu">
         <div className="item">
-          <h2>Khoảng khắc</h2>
           <UploadFile file={file} setFile={setFile} />
         </div>
         <div className="item">
-          <h2>Category</h2>
           <div className="cat">
             <input
               type="radio"
